@@ -1,0 +1,33 @@
+import kotlin.random.Random
+
+public class Singleton(
+	var index : Int
+) {
+	
+	
+	init{
+		
+	}
+	
+	companion object{
+		@Volatile
+		private var instance:Singleton?= null
+		
+		public fun getInstance():Singleton{
+			if(instance == null){
+				instance = Singleton(Random.nextInt(1,3))
+			}
+			return instance as Singleton
+		}
+	}
+	
+	public fun sayHi(){
+		print("Hi singleton $index")
+	}
+	
+	
+}
+
+fun main(){
+	print(Singleton.getInstance().sayHi())
+}

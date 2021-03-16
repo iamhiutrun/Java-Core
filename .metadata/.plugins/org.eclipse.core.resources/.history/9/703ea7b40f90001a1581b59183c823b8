@@ -1,0 +1,26 @@
+package StudentManagement;
+import java.util.Scanner;
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		STUDENT[] Student = new STUDENT[100];
+		
+		//Student[1] = new STUDENT("CT040320","Hieu", "Thanh Hoa", 18, 8.9);
+		Student[1] = new STUDENT();
+		Student[1].setStudentID("CT040320");
+		Student[1].setName("Hieu");
+		Student[1].setAddress("Thanh Hoa");
+		Student[1].setAge(18);
+		Student[1].setGPA(8.9);
+		
+		System.out.println(Student[1].getStudentID());
+		System.out.println(Student[1].getName());
+		System.out.println(Student[1].getAddress());
+		System.out.println(Student[1].getAge());
+		System.out.println(Student[1].getGPA());
+		sc.close();
+	}
+
+}

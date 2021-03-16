@@ -1,0 +1,38 @@
+package StudentManagement;
+import java.util.Scanner;
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Input the number of student: ");
+		int n = sc.nextInt();
+		STUDENT[] Student = new STUDENT[n];
+		
+		for(int i=0;i<n;i++) {
+			System.out.println("Input STUDENT "+(i+1));
+			 System.out.print("StudentID: ");
+			 String StudentID = sc.nextLine();
+			 System.out.print("Name: ");
+			 String name = sc.nextLine();
+			 System.out.print("Address: ");
+			 String Address = sc.nextLine();
+			 System.out.print("Age: ");
+			 int age = sc.nextInt();
+			 System.out.print("GPA: ");
+			 double GPA = sc.nextDouble();
+			 Student[i] = new STUDENT( StudentID,  name,  Address,  age,  GPA);
+			 sc.nextLine();
+		}
+		sc.close();
+		for(int i=0;i<n;i++) {
+			System.out.println("Information STUDENT "+(i+1));
+		System.out.println(Student[i].getStudentID());
+		System.out.println(Student[i].getName());
+		System.out.println(Student[i].getAddress());
+		System.out.println(Student[i].getAge());
+		System.out.println(Student[i].getGPA());
+		
+		}
+	}
+}

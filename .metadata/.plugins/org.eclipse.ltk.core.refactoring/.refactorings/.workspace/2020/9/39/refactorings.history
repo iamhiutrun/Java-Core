@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename Java project &apos;MultiThread&apos; to &apos;MultiThreading&apos;&#x0D;&#x0A;- Original element: &apos;MultiThread&apos;&#x0D;&#x0A;- Renamed element: &apos;MultiThread&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename Java project &apos;MultiThread&apos;" flags="7" id="org.eclipse.jdt.ui.rename.java.project" input="=MultiThread" name="MultiThreading" references="true" stamp="1600594614224" version="1.0"/>
+</session>

@@ -1,0 +1,13 @@
+
+			XÂY DỰNG LỚP NHÂN VIÊN
+1. Ho, Ten, SoSP lần lượt là các thuộc tính họ, tên và số sản
+	phẩm của nhân viên.
+2. Viết hàm khởi tạo NhanVien(String, String, int), hàm này sẽ
+	khởi tạo họ, tên, số sản phẩm của nhân viên; hàm phải kiểm 
+	tra số sản phẩm là số lớn hơn hoặc bằng 0, nếu là số âm thì
+    gán giá trị cho SoSP bằng 0.
+3. Viết các hàm lấy và gán giá trị cho thuộc tính của lớp (các
+	hàm get/set).
+4. Viết hàm getLuong() để tính lương cho nhân viên, lương = số
+	sản phẩm * đơn giá, với đơn giá tùy thuộc vào số sản phẩm
+	như sau:
